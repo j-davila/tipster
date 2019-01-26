@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tipster" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,7 +89,13 @@
                             <outletCollection property="gestureRecognizers" destination="0Eb-la-QnE" appends="YES" id="Bhb-Hf-YXl"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="R5k-Dz-amD"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="R5k-Dz-amD">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Lpb-4a-wQY">
+                            <connections>
+                                <segue destination="nQ2-ph-hqG" kind="push" id="eqi-fJ-o4D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="FYb-A9-cAu" id="Xhc-Sd-PKc"/>
                         <outlet property="percentagesControl" destination="Lua-rN-dVJ" id="kQV-PD-QsJ"/>
@@ -105,6 +111,22 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="132.88043478260872"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="qo3-0i-qIN">
+            <objects>
+                <viewController id="nQ2-ph-hqG" customClass="SettingsViewController" customModule="tipster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYl-ZA-TLk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g7d-Ao-dzg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gwX-P8-07c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oll-B7-Z0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sT7-qi-rhx">
