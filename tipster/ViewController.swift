@@ -18,9 +18,30 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var percentagesControl: UISegmentedControl!
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+       let currentPercentage = defaults.integer(forKey: "default")
+        percentagesControl.selectedSegmentIndex = currentPercentage
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     @IBAction func onTap(_ sender: Any) {
