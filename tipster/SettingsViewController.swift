@@ -19,27 +19,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("view will appear")
-        
-        saveSettings()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
-    @IBAction func onTap(_ sender: Any) {
-        
-        view.endEditing(true)
-        
+         saveSettings()
     }
     
     @IBAction func defaultTip(_ sender: UISegmentedControl) {
