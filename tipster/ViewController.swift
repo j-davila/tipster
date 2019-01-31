@@ -28,12 +28,14 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-       let currentPercentage = defaults.integer(forKey: "default")
+        let currentPercentage = defaults.integer(forKey: "default")
         percentagesControl.selectedSegmentIndex = currentPercentage
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,7 +51,6 @@ class ViewController: UIViewController {
         view.endEditing(true)
         
     }
-    
     
     @IBAction func calculateTip(_ sender: Any) {
         
