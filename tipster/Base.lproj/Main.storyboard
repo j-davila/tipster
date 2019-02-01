@@ -129,12 +129,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0pz-SW-Eko">
+                                <rect key="frame" x="0.0" y="241" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="g7d-Ao-dzg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="gwX-P8-07c"/>
                     <connections>
+                        <outlet property="currencyLocation" destination="0pz-SW-Eko" id="o44-hb-cgR"/>
                         <outlet property="defaultTipLabel" destination="aKP-C0-wbu" id="sAZ-QE-Rf1"/>
                         <outlet property="percentageControl" destination="Nnt-do-Ezu" id="mQ8-ke-H1E"/>
                     </connections>
@@ -160,20 +165,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMa-yj-lMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="132.88043478260872"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="FWg-9H-tU8">
-            <objects>
-                <viewController id="4F1-XE-T1d" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ztk-au-grW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uWi-f1-mzn"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rtx-o1-ygG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
 </document>
